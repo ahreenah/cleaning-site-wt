@@ -6,7 +6,6 @@
 #include <Wt/WText.h>
 #include "HelloApplication.hpp"
 #include "TextEditWidget.hpp"
-// for textedit widget constructor
 
 
 int main(int argc, char **argv)
