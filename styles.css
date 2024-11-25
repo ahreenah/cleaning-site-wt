@@ -1,0 +1,24 @@
+.user-info-container{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  & .user-info-form{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+    & button{
+      background-color: #eb886f;
+      border: none;
+      line-height: 20px;
+      color: white;
+      border-radius: 10px;
+      margin-left: auto;
+    }
+  }
+
+  & .user-info-html-display{
+    & .disabled{
+      color: #909090;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<messages>
+  <message id="start">Тестовое сообщение!</message>
+  <message id="testTemplate">
+    <div class="card">
+      <h2>Введённая информация</h2>
+      <div>
+        <span>Имя</span>
+        ${first-name}
+      </div>
+      <div>
+        <span>Фамилия</span>
+        ${last-name}
+      </div>
+    </div>
+  </message>
+</messages>

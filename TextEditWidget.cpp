@@ -2,6 +2,7 @@
 
 void TextEditWidget::_setText() {
   title_->setText("Hello " + nameEdit_->text());
+  textChanged_.emit(nameEdit_->text());
 }
 
 TextEditWidget::TextEditWidget(const std::string& initValue){
@@ -13,3 +14,7 @@ TextEditWidget::TextEditWidget(const std::string& initValue){
   button->clicked().connect([this]{_setText();});
 }
 
+// public signal
+Wt::Signal<Wt::WString>& TextEditWidget::textChanged() { 
+  return textChanged_;
+};
